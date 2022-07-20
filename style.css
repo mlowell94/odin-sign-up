@@ -1,18 +1,26 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('quicksand.ttf');
+}
+
 body {
     margin: 0;
+    font-family: 'pixel';
 }
 
 .wrapper {
-    background-color: black;
+    background: linear-gradient(0deg, rgba(16,0,255,1) 0%, rgba(65,141,210,1) 35%, rgba(0,255,235,0.9136029411764706) 100%);
     width: 100%;
     height: fit-content;
 }
 
 .banner {
-    background-image: url('SD140.JPG');
+    background-image: url(SD140.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
 }
 
 .logo img {
@@ -28,7 +36,107 @@ body {
 .logo p {
     display: inline-block;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 0px 0px 5px #ffffff;
+    font-size: 20px;
 
+}
+
+
+form {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-self: center;
+}
+
+.submit {
+    width: 100vw;
+    background-color: #0000001f;
+    margin-top: 12px;
+}
+
+input {
+    width: 190px;
+    align-self: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.hero {
+    background-color: #b8e1ff87;
+        text-align: center;
+    padding: 6px;
+    font-size: 24px;
+}
+
+.hero p + p {
+    text-shadow: 0px 0px 5px #0800ff;
+}
+
+
+button {
+    width: 175px;
+    border: outset #ffffff 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px;
+    display: block;
+    margin: 12px auto;
+    font-size: 14px;
+    color: black;
+    font-family: 'pixel';
+    background-color: #ffffff8f;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    outline: none;
+    border: 1px solid #555;
+}
+
+input[type=text]:not(:placeholder-shown):invalid, input[type=email]:not(:placeholder-shown):invalid, input[type=password]:not(:placeholder-shown):invalid {
+    outline: none;
+    border: 2px solid rgb(232, 131, 131);
+}
+
+
+input[type=text]:not(:placeholder-shown):valid, input[type=email]:not(:placeholder-shown):valid, input[type=password]:not(:placeholder-shown):valid {
+    outline: none;
+    border: 2px solid rgb(161, 228, 152);
+}
+
+button:active {
+    border: inset white 2px;
+}
+
+button + p {
+    width: fit-content;
+    margin-left: 12px;
+}
+
+a:hover {
+    color: rgb(132, 159, 168);
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    
 }
