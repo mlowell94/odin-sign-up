@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: 'pixel';
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -24,7 +25,7 @@ body {
 }
 
 .logo img {
-    width: 78px;
+    width: 55px;
     vertical-align: bottom;
 }
 
@@ -128,15 +129,148 @@ button + p {
     margin-left: 12px;
 }
 
-a:hover {
-    color: rgb(132, 159, 168);
+a {
+    color:rgb(232, 131, 131);
 }
 
-a:visited {
-    color: white;
+a:hover {
+    color: rgb(255, 0, 0);
 }
 
 a {
     text-decoration: none;
     
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        display: flex;
+        background: linear-gradient(0deg, rgba(16,0,255,1) 0%, rgba(65,141,210,1) 35%, rgba(0,255,235,0.9136029411764706) 100%);
+        height: 100vh;
+    }
+
+    .banner {
+        background-image: url(SD140.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 1px 1px 5px black;
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 40%;
+    }
+
+    .logo {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        margin: auto;
+        background-color: #0000004d;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .hero {
+        background-color: #b8e1ff87;
+        text-align: center;
+        padding: 7px;
+        font-size: 24px;
+    }
+
+    .submit {
+        flex-direction: column;
+        position: absolute;
+        justify-content: flex-start;
+        bottom: 0%;
+        width: auto;
+        min-width: calc(66% + 12px);
+        min-height: calc(50vh - 210px);
+        align-items: flex-start;
+    }
+
+    .logo p {
+        display: inline-block;
+        color: white;
+        text-shadow: 0px 0px 5px #ffffff;
+        font-size: 36px;
+    }
+
+    .logo img {
+        width: 150px;
+        vertical-align: bottom;
+    }
+
+    form div {
+        display: flex;
+        width: fit-content;
+        align-self: center;
+        flex-direction: row;
+        margin-top: 3%;
+    }
+
+    .formcont {
+        flex-direction: column;
+        margin-top: 3px;
+    }
+
+    input {
+        width: 25vw;
+        align-self: center;
+        border: solid black 2px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px;
+        height: 5vh;
+        margin-right: 50px;
+    }
+
+    form {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        height: calc(100vh - 188px);
+        justify-content: flex-start;
+    } 
+
+    button {
+        width: 210px;
+        border: outset #ffffff 2px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 16px;
+        display: block;
+        font-size: 17px;
+        color: black;
+        font-family: 'pixel';
+        background-color: #ffffff8f;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+
+    button + p {
+        width: fit-content;
+        margin-left: 12px;
+        margin-top: 8px;
+        font-size: 13px;
+        color: white;
+    }
+
+    #confirm + div {
+        width: 191px;
+        color: red;
+        position: absolute;
+        right: 8%;
+        top: 55.7%;
+    }
+  }
+
+  @media screen and (max-height: 850px) {
+    form div {
+        margin-top: 0%;
+    }
 }

@@ -12,50 +12,60 @@
     <div class="wrapper">
         <div class="banner">
             <div class="logo">
-                <img src="slowpoke.gif" alt="what i'm about 2 be if i can't make this responsive">
+                <img src="slowp.png" alt="what i'm about 2 be if i can't make this responsive">
                 <p>funnyguy.org</p>
             </div>
         </div>
-        <div class="hero">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                <br>
-                Many funny guys have passed through these hallowed halls...
-            </p>
-            <p>
-                <strong>Are you one of them?</strong>
-            </p>
+        <div class="container">
+            <div class="hero">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    <br>
+                    Many funny guys have passed through these hallowed halls...
+                </p>
+                <p>
+                    <strong>Are you one of them?</strong>
+                </p>
+            </div>
+            <form action="#" method="post">
+                        <p style="font-size: 24px; margin-bottom: 0;">Let's find out!!</p>
+                        <div class="name">
+                            <div class="formcont">
+                                <label for="first">First Name</label>
+                                <input type="text" id="first" name="first" required minlength = "2" placeholder=" ">
+                            </div>
+                            <div class="formcont">
+                                <label for="last">Last Name</label>
+                                <input type="text" id="last" name="last" required minlength = "2" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="formcont">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="example@abc.com">
+                            </div>
+                            <div class="formcont">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required minlength="10" placeholder="XXX-XXX-XXXX">
+                            </div>
+                        </div>
+                        <div class="password">
+                            <div class="formcont">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required minlength="8" placeholder=" " oninvalid="setCustomValidity('Passwords must be 8 characters')" >
+                            </div>
+                            <div class="formcont" id="errormsg">
+                                <label for="confirm">Confirm Password</label>
+                                <input type="password" id="confirm" name="confirm" required minlength="8" placeholder=" ">
+                            </div>
+                        </div>
+            
+                        <div class="submit">
+                            <button type="submit" id="submit">Become a <strong>Funny Guy</strong></button>
+                            <p>Already funny? <a href="#">Log in</a></p>
+                        </div>
+            </form>
+                </div>
         </div>
-        <form action="#" method="post">
-                    <p style="font-size: 24px; margin-bottom: 0;">Let's find out!!</p>
-                    <div class="name">
-                        <label for="first">First Name</label>
-                        <input type="text" id="first" name="first" required minlength = "2" placeholder=" ">
-                        <label for="last">Last Name</label>
-                        <input type="text" id="last" name="last" required minlength = "2" placeholder=" ">
-                    </div>
-
-                    <div class="contact">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="example@abc.com">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required minlength="10" placeholder="XXX-XXX-XXXX">
-                    </div>
-
-                    <div class="password" id="fun">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required minlength="8" placeholder=" " oninvalid="setCustomValidity('Passwords must be 8 characters')" >
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" id="confirm" name="confirm" required minlength="8" placeholder=" ">
-                    </div>
-                    
-                    <div class="submit">
-                        <button type="submit" id="submit">Become a <strong>Funny Guy</strong></button>
-                        <p>Already funny? <a href="http://google.com">Log in</a></p>
-                    </div>
-        </form>
-
-        <div class="footer"></div>
-    </div>
 </body>
 </html>
