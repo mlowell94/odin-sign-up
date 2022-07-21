@@ -42,15 +42,15 @@
                         <input type="text" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required minlength="10" placeholder="XXX-XXX-XXXX">
                     </div>
 
-                    <div class="password">
+                    <div class="password" id="fun">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required minlength="8" placeholder=" " oninvalid="setCustomValidity('Passwords must be 8 characters, contain at least one uppercase letter and one lowercase letter')" >
+                        <input type="password" id="password" name="password" required minlength="8" placeholder=" " oninvalid="setCustomValidity('Passwords must be 8 characters')" >
                         <label for="confirm">Confirm Password</label>
                         <input type="password" id="confirm" name="confirm" required minlength="8" placeholder=" ">
                     </div>
                     
                     <div class="submit">
-                        <button type="submit">Become a <strong>Funny Guy</strong></button>
+                        <button type="submit" id="submit">Become a <strong>Funny Guy</strong></button>
                         <p>Already funny? <a href="http://google.com">Log in</a></p>
                     </div>
         </form>
