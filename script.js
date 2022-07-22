@@ -14,11 +14,11 @@ function confirmPassword() {
     if(password.value != confirmation.value) {
         console.log('wrong');
         myButton.disabled = true;
-        document.getElementById("errormsg").appendChild(invalid);
+        document.getElementById("fun").appendChild(invalid);
         return false;
     } else {
         console.log('correct')
-        document.getElementById("errormsg").removeChild(invalid);
+        document.getElementById("fun").removeChild(invalid);
         myButton.disabled = false;
         return true;
     }
